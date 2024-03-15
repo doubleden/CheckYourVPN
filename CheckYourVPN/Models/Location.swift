@@ -14,9 +14,9 @@ struct Location: Decodable {
     
     var description: String {
         """
-        Ты находишься в \(country), \(continent)
-        А точнее в \(city), \(regionName)
-        Твой ip: \(ip)
+        Country: \(country), \(continent)
+        City: \(city), \(regionName)
+        IP: \(ip)
         """
     }
 }
