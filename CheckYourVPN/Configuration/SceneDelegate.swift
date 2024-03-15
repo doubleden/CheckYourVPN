@@ -16,13 +16,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
     }
     
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.overrideUserInterfaceStyle = .dark
-            self.window = window
-            window.makeKeyAndVisible()
-        }
-    }
 }
 
