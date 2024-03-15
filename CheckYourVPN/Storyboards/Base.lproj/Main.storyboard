@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.76862745098039209" green="0.99215686274509807" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="Color"/>
-                                <size key="shadowOffset" width="2" height="2"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="j4T-yC-SOa">
                                 <rect key="frame" x="-315.66666666666669" y="311" width="1024.3333333333333" height="230"/>
@@ -65,20 +65,45 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Find View Controller-->
         <scene sceneID="JBW-ha-ge0">
             <objects>
-                <viewController id="0ja-sG-kac" sceneMemberID="viewController">
+                <viewController id="0ja-sG-kac" customClass="FindViewController" customModule="CheckYourVPN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGB-Vw-qmO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We find you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-9M-8se">
+                                <rect key="frame" x="16" y="90" width="361" height="42"/>
+                                <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="40"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.99215686270000003" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="Color"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Info About User" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPN-sm-i3i">
+                                <rect key="frame" x="45" y="500" width="303" height="274.66666666666674"/>
+                                <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="19"/>
+                                <color key="textColor" name="Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Sht-JD-nYv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sht-JD-nYv" firstAttribute="bottom" secondItem="lPN-sm-i3i" secondAttribute="bottom" multiplier="1.1" id="DnM-k9-ODl"/>
+                            <constraint firstItem="lPN-sm-i3i" firstAttribute="height" secondItem="SGB-Vw-qmO" secondAttribute="height" multiplier="0.322301" id="F1f-zw-iGi"/>
+                            <constraint firstItem="Sht-JD-nYv" firstAttribute="trailing" secondItem="lPN-sm-i3i" secondAttribute="trailing" constant="45" id="GT1-lc-4gG"/>
+                            <constraint firstItem="lPN-sm-i3i" firstAttribute="leading" secondItem="Sht-JD-nYv" secondAttribute="leading" constant="45" id="RQh-6y-Psx"/>
+                            <constraint firstItem="bAA-9M-8se" firstAttribute="top" secondItem="Sht-JD-nYv" secondAttribute="top" constant="90" id="RjS-Gz-sGT"/>
+                            <constraint firstItem="Sht-JD-nYv" firstAttribute="trailing" secondItem="bAA-9M-8se" secondAttribute="trailing" constant="16" id="lKt-6x-jKW"/>
+                            <constraint firstItem="bAA-9M-8se" firstAttribute="leading" secondItem="Sht-JD-nYv" secondAttribute="leading" constant="16" id="ydm-jg-Zbf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxi-Nr-lbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="4"/>
+            <point key="canvasLocation" x="1035.8778625954199" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
