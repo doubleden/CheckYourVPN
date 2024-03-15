@@ -87,9 +87,12 @@
                                 <color key="textColor" name="Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dky-v6-DH0">
-                                <rect key="frame" x="187" y="627" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dky-v6-DH0">
+                                <rect key="frame" x="186.66666666666666" y="635.33333333333337" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="mHG-X9-kca"/>
+                                    <constraint firstAttribute="height" constant="20" id="zeT-xZ-R5Z"/>
+                                </constraints>
                                 <color key="color" name="Color"/>
                             </activityIndicatorView>
                         </subviews>
@@ -98,7 +101,9 @@
                         <constraints>
                             <constraint firstItem="Sht-JD-nYv" firstAttribute="bottom" secondItem="lPN-sm-i3i" secondAttribute="bottom" multiplier="1.1" id="DnM-k9-ODl"/>
                             <constraint firstItem="lPN-sm-i3i" firstAttribute="height" secondItem="SGB-Vw-qmO" secondAttribute="height" multiplier="0.322301" id="F1f-zw-iGi"/>
+                            <constraint firstItem="dky-v6-DH0" firstAttribute="centerX" secondItem="SGB-Vw-qmO" secondAttribute="centerX" id="FkA-yO-Sm6"/>
                             <constraint firstItem="Sht-JD-nYv" firstAttribute="trailing" secondItem="lPN-sm-i3i" secondAttribute="trailing" constant="45" id="GT1-lc-4gG"/>
+                            <constraint firstItem="Sht-JD-nYv" firstAttribute="bottom" secondItem="dky-v6-DH0" secondAttribute="bottom" multiplier="1.3" id="Jzx-rQ-JXs"/>
                             <constraint firstItem="lPN-sm-i3i" firstAttribute="leading" secondItem="Sht-JD-nYv" secondAttribute="leading" constant="45" id="RQh-6y-Psx"/>
                             <constraint firstItem="bAA-9M-8se" firstAttribute="top" secondItem="Sht-JD-nYv" secondAttribute="top" constant="90" id="RjS-Gz-sGT"/>
                             <constraint firstItem="Sht-JD-nYv" firstAttribute="trailing" secondItem="bAA-9M-8se" secondAttribute="trailing" constant="16" id="lKt-6x-jKW"/>
