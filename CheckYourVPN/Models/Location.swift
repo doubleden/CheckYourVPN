@@ -5,9 +5,7 @@
 //  Created by Denis Denisov on 15/3/24.
 //
 
-import Foundation
-
-struct Location {
+struct Location: Decodable {
     let continent: String
     let country: String
     let regionName: String
