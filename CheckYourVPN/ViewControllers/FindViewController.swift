@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FindViewController: UIViewController {
+final class FindViewController: UIViewController {
 
     @IBOutlet var ipInfoLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
