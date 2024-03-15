@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0518482D2BA449A100596E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518482C2BA449A100596E7F /* AppDelegate.swift */; };
 		0518482F2BA449A100596E7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518482E2BA449A100596E7F /* SceneDelegate.swift */; };
-		051848312BA449A100596E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051848302BA449A100596E7F /* ViewController.swift */; };
+		051848312BA449A100596E7F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051848302BA449A100596E7F /* WelcomeViewController.swift */; };
 		051848342BA449A100596E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 051848322BA449A100596E7F /* Main.storyboard */; };
 		051848362BA449A200596E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051848352BA449A200596E7F /* Assets.xcassets */; };
 		051848392BA449A200596E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 051848372BA449A200596E7F /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		051848292BA449A100596E7F /* CheckYourVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckYourVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0518482C2BA449A100596E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0518482E2BA449A100596E7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		051848302BA449A100596E7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		051848302BA449A100596E7F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		051848332BA449A100596E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		051848352BA449A200596E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		051848382BA449A200596E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		0518482B2BA449A100596E7F /* CheckYourVPN */ = {
 			isa = PBXGroup;
 			children = (
-				0518482C2BA449A100596E7F /* AppDelegate.swift */,
-				0518482E2BA449A100596E7F /* SceneDelegate.swift */,
-				051848302BA449A100596E7F /* ViewController.swift */,
-				051848322BA449A100596E7F /* Main.storyboard */,
+				051848412BA449E500596E7F /* ViewControllers */,
+				051848422BA449F200596E7F /* Storyboards */,
+				051848432BA44A0100596E7F /* Models */,
+				051848402BA449BC00596E7F /* Configuration */,
 				051848352BA449A200596E7F /* Assets.xcassets */,
-				051848372BA449A200596E7F /* LaunchScreen.storyboard */,
-				0518483A2BA449A200596E7F /* Info.plist */,
 			);
 			path = CheckYourVPN;
+			sourceTree = "<group>";
+		};
+		051848402BA449BC00596E7F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0518482C2BA449A100596E7F /* AppDelegate.swift */,
+				0518482E2BA449A100596E7F /* SceneDelegate.swift */,
+				0518483A2BA449A200596E7F /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		051848412BA449E500596E7F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				051848302BA449A100596E7F /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		051848422BA449F200596E7F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				051848322BA449A100596E7F /* Main.storyboard */,
+				051848372BA449A200596E7F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		051848432BA44A0100596E7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051848312BA449A100596E7F /* ViewController.swift in Sources */,
+				051848312BA449A100596E7F /* WelcomeViewController.swift in Sources */,
 				0518482D2BA449A100596E7F /* AppDelegate.swift in Sources */,
 				0518482F2BA449A100596E7F /* SceneDelegate.swift in Sources */,
 			);
@@ -294,12 +326,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CheckYourVPN/Info.plist;
+				INFOPLIST_FILE = CheckYourVPN/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +339,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.CheckYourVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +358,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CheckYourVPN/Info.plist;
+				INFOPLIST_FILE = CheckYourVPN/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DnD.CheckYourVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
