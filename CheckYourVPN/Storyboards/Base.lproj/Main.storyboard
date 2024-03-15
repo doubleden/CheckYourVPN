@@ -41,9 +41,6 @@
                                         <integer key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="0ja-sG-kac" kind="presentation" modalPresentationStyle="fullScreen" id="UQ8-Is-wuK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,6 +57,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qns-ff-qmD" secondAttribute="trailing" constant="16" id="r4o-6C-3zg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="0ja-sG-kac" kind="presentation" identifier="showFindVC" modalPresentationStyle="fullScreen" id="G8j-tn-wgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
