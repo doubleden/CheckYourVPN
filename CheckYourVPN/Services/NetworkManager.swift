@@ -53,7 +53,9 @@ final class NetworkManager {
                     completion(.success(locationInfo))
                 }
             } catch {
-                completion(.failure(.noData))
+                DispatchQueue.main.async {
+                    completion(.failure(.noData))
+                }
             }
         }.resume()
     }

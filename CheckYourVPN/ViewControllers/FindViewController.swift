@@ -10,36 +10,45 @@ import UIKit
 final class FindViewController: UIViewController {
 
     @IBOutlet var processLabel: UILabel!
+    @IBOutlet var progressImage: UIImageView!
     @IBOutlet var ipInfoLabel: UILabel!
+    @IBOutlet var moreInfoButton: UIButton!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
-    @IBOutlet var moreInfoButton: UIButton!
     private let networkManager = NetworkManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchLocation()
     }
+    
     @IBAction func updateButtonDidTapped() {
         processLabel.text = "Searching..."
+        progressImage.image = UIImage(named: "searching")
         ipInfoLabel.text = ""
         moreInfoButton.isHidden = true
         activityIndicator.startAnimating()
         fetchLocation()
     }
-    
-    private func fetchLocation() {
+}
+
+// MARK: - Private Methods
+private extension FindViewController {
+    func fetchLocation() {
         networkManager.fetchLocation(from: API.location.url) { [unowned self] result in
             switch result {
             case .success(let location):
-                ipInfoLabel.text = location.description
-                activityIndicator.stopAnimating()
+                ipInfoLabel.text = location.shortDescription
+                progressImage.image = UIImage(named: "planetFindYou")
                 processLabel.text = "Location was found"
                 moreInfoButton.isHidden = false
+                activityIndicator.stopAnimating()
             case .failure(let error):
-                showAlert(withTitle: "Error", andMessage: error.description)
-                processLabel.textColor = .red
                 processLabel.text = "Location was not found"
+                processLabel.textColor = .red
+                progressImage.image = UIImage(named: "error")
+                showAlert(withTitle: "Error", andMessage: error.description)
+                activityIndicator.stopAnimating()
             }
         }
     }

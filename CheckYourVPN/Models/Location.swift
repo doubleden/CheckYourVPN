@@ -12,7 +12,7 @@ struct Location: Decodable {
     let city: String
     let ip: String
     
-    var description: String {
+    var shortDescription: String {
         """
         Country: \(country), \(continent)
         City: \(city), \(regionName)
