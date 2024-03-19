@@ -9,14 +9,22 @@ import UIKit
 
 final class FindViewController: UIViewController {
 
-    @IBOutlet var ipInfoLabel: UILabel!
     @IBOutlet var processLabel: UILabel!
+    @IBOutlet var ipInfoLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet var moreInfoButton: UIButton!
     private let networkManager = NetworkManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchLocation()
+    }
+    @IBAction func updateButtonDidTapped() {
+        processLabel.text = "Searching..."
+        ipInfoLabel.text = ""
+        moreInfoButton.isHidden = true
+        activityIndicator.startAnimating()
         fetchLocation()
     }
     
@@ -27,6 +35,7 @@ final class FindViewController: UIViewController {
                 ipInfoLabel.text = location.description
                 activityIndicator.stopAnimating()
                 processLabel.text = "Location was found"
+                moreInfoButton.isHidden = false
             case .failure(let error):
                 showAlert(withTitle: "Error", andMessage: error.description)
                 processLabel.textColor = .red
