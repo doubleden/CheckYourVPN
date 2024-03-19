@@ -73,7 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We find you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-9M-8se">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-9M-8se">
                                 <rect key="frame" x="16" y="90" width="382" height="42"/>
                                 <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="40"/>
                                 <color key="textColor" red="0.76862745099999996" green="0.99215686270000003" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -120,6 +120,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="dky-v6-DH0" id="ddt-QY-bMa"/>
                         <outlet property="ipInfoLabel" destination="lPN-sm-i3i" id="HYZ-qM-Drm"/>
+                        <outlet property="processLabel" destination="bAA-9M-8se" id="Frh-F2-lgh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxi-Nr-lbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
