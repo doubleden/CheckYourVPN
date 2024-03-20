@@ -7,10 +7,9 @@
 
 import UIKit
 
-class ApplicationDetailsViewController: UIViewController {
+final class ApplicationDetailsViewController: UIViewController {
 
     @IBOutlet var logoImage: UIImageView!
-    
     @IBOutlet var descriptionLabel: UITextView!
     
     var application: Application!
