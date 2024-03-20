@@ -9,8 +9,6 @@ import UIKit
 
 final class RecommendationListViewController: UITableViewController {
     
-    
-    
     private let applications = Application.getApplications()
     
     override func viewDidLoad() {

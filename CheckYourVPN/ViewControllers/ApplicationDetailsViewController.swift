@@ -9,12 +9,18 @@ import UIKit
 
 class ApplicationDetailsViewController: UIViewController {
 
+    @IBOutlet var logoImage: UIImageView!
+    
+    @IBOutlet var descriptionLabel: UITextView!
+    
     var application: Application!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        logoImage.layer.cornerRadius = logoImage.frame.width / 2
+        logoImage.image = UIImage(named: application.image)
+        descriptionLabel.text = application.description
     }
 
 }
