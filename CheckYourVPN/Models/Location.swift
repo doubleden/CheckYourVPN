@@ -6,7 +6,6 @@
 //
 
 struct Location: Decodable {
-    let status: String
     let continent: String
     let country: String
     let regionName: String
@@ -28,7 +27,6 @@ struct Location: Decodable {
     
     var fullDescription: String {
         """
-        status: \(status)
         continent: \(continent)
         country: \(country)
         regionName: \(regionName)
