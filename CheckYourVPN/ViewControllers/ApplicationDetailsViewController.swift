@@ -18,7 +18,7 @@ class ApplicationDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        logoImage.layer.cornerRadius = logoImage.frame.width / 2
+        logoImage.layer.cornerRadius = 15
         logoImage.image = UIImage(named: application.image)
         descriptionLabel.text = application.description
     }
