@@ -16,10 +16,16 @@ final class FindViewController: UIViewController {
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     private let networkManager = NetworkManager.shared
+    private var location: Location? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchLocation()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let descriptionVC = segue.destination as? DescriptionViewController
+        descriptionVC?.location = location
     }
     
     @IBAction func updateButtonDidTapped() {
@@ -38,6 +44,7 @@ private extension FindViewController {
         networkManager.fetchLocation(from: API.location.url) { [unowned self] result in
             switch result {
             case .success(let location):
+                self.location = location
                 ipInfoLabel.text = location.shortDescription
                 progressImage.image = UIImage(named: "planetFindYou")
                 processLabel.text = "Location was found"
