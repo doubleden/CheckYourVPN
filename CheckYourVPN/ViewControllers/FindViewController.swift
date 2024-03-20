@@ -24,7 +24,7 @@ final class FindViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let descriptionVC = segue.destination as? DescriptionViewController
+        let descriptionVC = segue.destination as? DescriptionTableViewController
         descriptionVC?.location = location
     }
     

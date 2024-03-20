@@ -16,7 +16,7 @@
 		051848472BA45ACA00596E7F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051848462BA45ACA00596E7F /* Location.swift */; };
 		058FFE752BAA20FC00CB6DA9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE742BAA20FC00CB6DA9 /* NetworkManager.swift */; };
 		058FFE782BAA2E5700CB6DA9 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE772BAA2E5700CB6DA9 /* Extension + UIViewController.swift */; };
-		058FFE7A2BAB227500CB6DA9 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE792BAB227500CB6DA9 /* DescriptionViewController.swift */; };
+		058FFE7C2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		051848462BA45ACA00596E7F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		058FFE742BAA20FC00CB6DA9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		058FFE772BAA2E5700CB6DA9 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
-		058FFE792BAB227500CB6DA9 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				051848442BA456A600596E7F /* FindViewController.swift */,
-				058FFE792BAB227500CB6DA9 /* DescriptionViewController.swift */,
+				058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				058FFE782BAA2E5700CB6DA9 /* Extension + UIViewController.swift in Sources */,
-				058FFE7A2BAB227500CB6DA9 /* DescriptionViewController.swift in Sources */,
 				0518482D2BA449A100596E7F /* AppDelegate.swift in Sources */,
+				058FFE7C2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift in Sources */,
 				0518482F2BA449A100596E7F /* SceneDelegate.swift in Sources */,
 				058FFE752BAA20FC00CB6DA9 /* NetworkManager.swift in Sources */,
 				051848472BA45ACA00596E7F /* Location.swift in Sources */,

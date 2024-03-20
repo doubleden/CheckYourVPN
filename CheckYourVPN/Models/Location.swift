@@ -25,18 +25,18 @@ struct Location: Decodable {
         """
     }
     
-    var fullDescription: String {
-        """
-        continent: \(continent)
-        country: \(country)
-        regionName: \(regionName)
-        city: \(city)
-        zip: \(zip)
-        currency: \(currency)
-        provider: \(isp)
-        organization: \(org)
-        proxy: \(proxy)
-        IP: \(ip)
-        """
+    var informations: [String] {
+        [
+            "Continent: \(continent)",
+            "Country: \(country)",
+            "Region: \(regionName)",
+            "City: \(city)",
+            "Zip: \(zip)",
+            "Currency: \(currency)",
+            "Provider: \(isp)",
+            "Organization: \(org)",
+            "Proxy: \(proxy)",
+            "IP: \(ip)"
+        ]
     }
 }
