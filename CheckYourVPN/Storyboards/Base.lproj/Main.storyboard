@@ -76,7 +76,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-9M-8se">
                                 <rect key="frame" x="16" y="74" width="361" height="42"/>
                                 <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="40"/>
-                                <color key="textColor" red="0.76862745099999996" green="0.99215686270000003" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" name="Color"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="Color"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
@@ -217,10 +217,10 @@
         <image name="logo" width="1024" height="1024"/>
         <image name="planetFindYou" width="1024" height="1792"/>
         <namedColor name="Color">
-            <color red="0.7686274509803922" green="0.99215686274509807" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.45098042490000001" green="0.96862745289999996" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="descrpFont">
-            <color red="0.80795295943503675" green="0.81595249368686873" blue="0.81595249368686873" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.80784313725490198" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
