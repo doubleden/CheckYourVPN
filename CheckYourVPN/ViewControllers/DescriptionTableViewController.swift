@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DescriptionTableViewController: UITableViewController {
+final class DescriptionTableViewController: UITableViewController {
     
     var location: Location!
     

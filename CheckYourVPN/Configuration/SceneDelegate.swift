@@ -20,7 +20,10 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBarAppearance.stackedLayoutAppearance.selected.iconColor = .color
         UITabBar.appearance().standardAppearance = tabBarAppearance
         
+        
         UINavigationBar.appearance().tintColor = UIColor.color
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.color]
+
     }
     
 }

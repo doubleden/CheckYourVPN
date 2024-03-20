@@ -42,7 +42,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="fbk-GC-dHL" kind="presentation" modalPresentationStyle="fullScreen" id="IO6-Ty-QjY"/>
+                                    <segue destination="FfE-rV-Dan" kind="presentation" modalPresentationStyle="fullScreen" id="Gp6-CW-7qn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,13 +85,13 @@
                                 <rect key="frame" x="41.666666666666657" y="166" width="310" height="267"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPN-sm-i3i">
-                                <rect key="frame" x="45" y="549.66666666666663" width="303" height="104.33333333333337"/>
+                                <rect key="frame" x="45" y="508.99999999999994" width="303" height="104.33333333333331"/>
                                 <fontDescription key="fontDescription" name="STIXTwoMath-Regular" family="STIX Two Math" pointSize="20"/>
                                 <color key="textColor" name="descrpFont"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To8-0b-PHR">
-                                <rect key="frame" x="133.66666666666666" y="671" width="125.66666666666666" height="39"/>
+                                <rect key="frame" x="133.66666666666666" y="630.33333333333337" width="125.66666666666666" height="39"/>
                                 <color key="backgroundColor" name="Color"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -108,7 +108,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dky-v6-DH0">
-                                <rect key="frame" x="186.66666666666666" y="588.66666666666663" width="20" height="20"/>
+                                <rect key="frame" x="186.66666666666666" y="553.66666666666663" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="mHG-X9-kca"/>
                                     <constraint firstAttribute="height" constant="20" id="zeT-xZ-R5Z"/>
@@ -154,7 +154,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxi-Nr-lbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962.5954198473282" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3068" y="-287"/>
+        </scene>
+        <!--Recomendations-->
+        <scene sceneID="p43-Jd-6V2">
+            <objects>
+                <tableViewController id="Zll-vA-f5w" customClass="RecommendationListViewController" customModule="CheckYourVPN" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ekI-aq-YS3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellVPN" textLabel="BRM-7U-ZmH" detailTextLabel="EaG-Mj-02N" rowHeight="62" style="IBUITableViewCellStyleSubtitle" id="jIF-fu-5sm" customClass="ApplicationCell" customModule="CheckYourVPN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="62"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jIF-fu-5sm" id="N3v-Mq-TG1">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BRM-7U-ZmH">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EaG-Mj-02N">
+                                            <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1f3-dz-lBw" kind="show" identifier="showDetails" id="v4O-iI-VIT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zll-vA-f5w" id="CUk-l3-3R1"/>
+                            <outlet property="delegate" destination="Zll-vA-f5w" id="in3-7l-sfR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recomendations" id="IeX-il-klF">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Jsj-Rl-M6U"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRD-Rs-xhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3110.6870229007632" y="411.97183098591552"/>
+        </scene>
+        <!--Application Details View Controller-->
+        <scene sceneID="2Dl-nE-9rM">
+            <objects>
+                <viewController id="1f3-dz-lBw" customClass="ApplicationDetailsViewController" customModule="CheckYourVPN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kW5-Mg-Rn8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cny-Wr-DLJ">
+                                <rect key="frame" x="76.666666666666686" y="116" width="240" height="174"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P6V-XD-ZQn">
+                                <rect key="frame" x="16" y="342" width="361" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="eQa-IN-PET"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vA1-B4-UOS"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Aa-5I-rM5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cny-Wr-DLJ" firstAttribute="centerX" secondItem="kW5-Mg-Rn8" secondAttribute="centerX" id="9DV-Hd-1zh"/>
+                            <constraint firstItem="Cny-Wr-DLJ" firstAttribute="height" secondItem="kW5-Mg-Rn8" secondAttribute="height" multiplier="0.204225" id="9Mi-ME-jHt"/>
+                            <constraint firstItem="Cny-Wr-DLJ" firstAttribute="top" secondItem="4Aa-5I-rM5" secondAttribute="top" constant="20" id="IWh-GG-pGP"/>
+                            <constraint firstItem="Cny-Wr-DLJ" firstAttribute="width" secondItem="kW5-Mg-Rn8" secondAttribute="width" multiplier="0.610687" id="o8B-Ux-zJb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ATS-Nf-LJm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVf-XA-tgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3901.5267175572517" y="411.97183098591552"/>
+        </scene>
+        <!--VPNs-->
+        <scene sceneID="g4P-zO-uS1">
+            <objects>
+                <navigationController id="FXB-2n-QXu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="VPNs" image="magnifyingglass" catalog="system" id="bQU-tG-rAZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ccA-9M-e0M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zll-vA-f5w" kind="relationship" relationship="rootViewController" id="HGP-cQ-5TD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gn5-lw-thX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208" y="412"/>
         </scene>
         <!--Description Table View Controller-->
         <scene sceneID="avm-hu-KZE">
@@ -192,12 +292,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1h-gd-way" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842" y="4"/>
+            <point key="canvasLocation" x="3947" y="-287"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Check-->
         <scene sceneID="kBo-F7-0pb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fbk-GC-dHL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Check" image="checkmark.seal" catalog="system" id="EGT-lj-SH0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Anv-HI-W3o">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
@@ -210,14 +311,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moN-0z-qgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2141" y="-287"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="q6n-2I-c2V">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FfE-rV-Dan" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F9R-Oe-31O">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fbk-GC-dHL" kind="relationship" relationship="viewControllers" id="UC5-bK-Qm0"/>
+                        <segue destination="FXB-2n-QXu" kind="relationship" relationship="viewControllers" id="1kA-mI-8kp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddZ-5n-CdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1035.8778625954199" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.seal" catalog="system" width="128" height="124"/>
         <image name="logo" width="1024" height="1024"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="planetFindYou" width="1024" height="1792"/>
         <namedColor name="Color">
-            <color red="0.45098042490000001" green="0.96862745289999996" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.45098039215686275" green="0.96862745098039216" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="descrpFont">
             <color red="0.80784313725490198" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

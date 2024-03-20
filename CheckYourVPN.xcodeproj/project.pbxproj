@@ -17,8 +17,10 @@
 		058FFE752BAA20FC00CB6DA9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE742BAA20FC00CB6DA9 /* NetworkManager.swift */; };
 		058FFE782BAA2E5700CB6DA9 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE772BAA2E5700CB6DA9 /* Extension + UIViewController.swift */; };
 		058FFE7C2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */; };
-		058FFE7E2BAB4C0E00CB6DA9 /* vpnApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7D2BAB4C0E00CB6DA9 /* vpnApplication.swift */; };
+		058FFE7E2BAB4C0E00CB6DA9 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7D2BAB4C0E00CB6DA9 /* Application.swift */; };
 		058FFE802BAB4C1E00CB6DA9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7F2BAB4C1E00CB6DA9 /* DataStore.swift */; };
+		058FFE822BAB5DD900CB6DA9 /* RecommendationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE812BAB5DD900CB6DA9 /* RecommendationListViewController.swift */; };
+		058FFE872BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE862BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		058FFE742BAA20FC00CB6DA9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		058FFE772BAA2E5700CB6DA9 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewController.swift; sourceTree = "<group>"; };
-		058FFE7D2BAB4C0E00CB6DA9 /* vpnApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vpnApplication.swift; sourceTree = "<group>"; };
+		058FFE7D2BAB4C0E00CB6DA9 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		058FFE7F2BAB4C1E00CB6DA9 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		058FFE812BAB5DD900CB6DA9 /* RecommendationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationListViewController.swift; sourceTree = "<group>"; };
+		058FFE862BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			children = (
 				051848442BA456A600596E7F /* FindViewController.swift */,
 				058FFE7B2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift */,
+				058FFE812BAB5DD900CB6DA9 /* RecommendationListViewController.swift */,
+				058FFE862BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				051848462BA45ACA00596E7F /* Location.swift */,
-				058FFE7D2BAB4C0E00CB6DA9 /* vpnApplication.swift */,
+				058FFE7D2BAB4C0E00CB6DA9 /* Application.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,12 +213,14 @@
 				058FFE782BAA2E5700CB6DA9 /* Extension + UIViewController.swift in Sources */,
 				0518482D2BA449A100596E7F /* AppDelegate.swift in Sources */,
 				058FFE7C2BAB2D6700CB6DA9 /* DescriptionTableViewController.swift in Sources */,
+				058FFE822BAB5DD900CB6DA9 /* RecommendationListViewController.swift in Sources */,
 				0518482F2BA449A100596E7F /* SceneDelegate.swift in Sources */,
 				058FFE752BAA20FC00CB6DA9 /* NetworkManager.swift in Sources */,
+				058FFE872BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift in Sources */,
 				051848472BA45ACA00596E7F /* Location.swift in Sources */,
 				051848452BA456A600596E7F /* FindViewController.swift in Sources */,
 				058FFE802BAB4C1E00CB6DA9 /* DataStore.swift in Sources */,
-				058FFE7E2BAB4C0E00CB6DA9 /* vpnApplication.swift in Sources */,
+				058FFE7E2BAB4C0E00CB6DA9 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
