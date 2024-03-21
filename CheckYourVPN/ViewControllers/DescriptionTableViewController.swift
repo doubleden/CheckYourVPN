@@ -19,16 +19,16 @@ final class DescriptionTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        location.informations.count
+        location.datasOfLocation.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellInfo", for: indexPath)
     
         var content = cell.defaultContentConfiguration()
-        let info = location.informations[indexPath.row]
+        let dataOfLocation = location.datasOfLocation[indexPath.row]
         
-        content.text = info
+        content.text = dataOfLocation
         content.textProperties.color = UIColor.descrpFont
         cell.contentConfiguration = content
         return cell

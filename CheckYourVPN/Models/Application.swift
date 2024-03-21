@@ -12,10 +12,10 @@ struct Application {
     let description: String
     
     static func getApplications() -> [Application] {
-        let data = DataStore.shared
+        let dataStore = DataStore.shared
         var applications: [Application] = []
         
-        data.applications.forEach { application in
+        dataStore.applications.forEach { application in
             applications.append(
                 Application(
                     title: application.tittle,

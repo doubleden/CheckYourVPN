@@ -15,8 +15,8 @@ final class FindViewController: UIViewController {
     @IBOutlet var moreInfoButton: UIButton!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
-    private let networkManager = NetworkManager.shared
     private var location: Location? = nil
+    private let networkManager = NetworkManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ private extension FindViewController {
             switch result {
             case .success(let location):
                 self.location = location
-                ipInfoLabel.text = location.shortDescription
+                ipInfoLabel.text = location.description
                 progressImage.image = UIImage(named: "planetFindYou")
                 processLabel.text = "Location was found"
                 moreInfoButton.isHidden = false
@@ -54,6 +54,7 @@ private extension FindViewController {
                 processLabel.text = "Location was not found"
                 processLabel.textColor = .red
                 progressImage.image = UIImage(named: "error")
+                navigationItem.rightBarButtonItem?.isHidden = true
                 showAlert(withTitle: "Error", andMessage: error.description)
                 activityIndicator.stopAnimating()
             }

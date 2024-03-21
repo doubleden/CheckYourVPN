@@ -17,7 +17,7 @@ struct Location: Decodable {
     let proxy: Bool
     let ip: String
     
-    var shortDescription: String {
+    var description: String {
         """
         Country: \(country), \(continent)
         City: \(city), \(regionName)
@@ -25,7 +25,7 @@ struct Location: Decodable {
         """
     }
     
-    var informations: [String] {
+    var datasOfLocation: [String] {
         [
             "Continent: \(continent)",
             "Country: \(country)",
