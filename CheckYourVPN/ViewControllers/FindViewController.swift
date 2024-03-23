@@ -55,7 +55,7 @@ private extension FindViewController {
                 processLabel.textColor = .red
                 progressImage.image = UIImage(named: "error")
                 navigationItem.rightBarButtonItem?.isHidden = true
-                showAlert(withTitle: "Error", andMessage: error.description)
+                showAlert(withTitle: "Error", andMessage: error.localizedDescription)
                 activityIndicator.stopAnimating()
             }
         }

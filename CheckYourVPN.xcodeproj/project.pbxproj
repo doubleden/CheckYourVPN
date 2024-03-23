@@ -21,6 +21,7 @@
 		058FFE802BAB4C1E00CB6DA9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE7F2BAB4C1E00CB6DA9 /* DataStore.swift */; };
 		058FFE822BAB5DD900CB6DA9 /* RecommendationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE812BAB5DD900CB6DA9 /* RecommendationListViewController.swift */; };
 		058FFE872BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058FFE862BAB68AE00CB6DA9 /* ApplicationDetailsViewController.swift */; };
+		05AD40032BAEDAC800156D88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 05AD40022BAEDAC800156D88 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AD40032BAEDAC800156D88 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +157,9 @@
 			dependencies = (
 			);
 			name = CheckYourVPN;
+			packageProductDependencies = (
+				05AD40022BAEDAC800156D88 /* Alamofire */,
+			);
 			productName = CheckYourVPN;
 			productReference = 051848292BA449A100596E7F /* CheckYourVPN.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 051848202BA449A100596E7F;
+			packageReferences = (
+				05AD40012BAEDAC800156D88 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0518482A2BA449A100596E7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -451,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05AD40012BAEDAC800156D88 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05AD40022BAEDAC800156D88 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05AD40012BAEDAC800156D88 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 051848212BA449A100596E7F /* Project object */;
 }

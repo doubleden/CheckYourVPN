@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum API {
     case location
@@ -40,23 +41,17 @@ final class NetworkManager {
     
     private init() {}
     
-    func fetchLocation(from url: URL, completion: @escaping(Result<Location, NetworkError>) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data else {
-                completion(.failure(.noData))
-                return
-            }
-            
-            do {
-                let locationInfo = try JSONDecoder().decode(Location.self, from: data)
-                DispatchQueue.main.async {
-                    completion(.success(locationInfo))
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.failure(.noData))
+    func fetchLocation(from url: URL, completion: @escaping(Result<Location, AFError>) -> Void) {
+        AF.request(url)
+            .validate().responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    let location = Location.getLocation(from: value)
+                    completion(.success(location))
+                case .failure(let error):
+                    print(error)
+                    completion(.failure(error))
                 }
             }
-        }.resume()
     }
 }
