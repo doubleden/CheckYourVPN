@@ -43,7 +43,8 @@ final class NetworkManager {
     
     func fetchLocation(from url: URL, completion: @escaping(Result<Location, AFError>) -> Void) {
         AF.request(url)
-            .validate().responseJSON { dataResponse in
+            .validate()
+            .responseJSON { dataResponse in
                 switch dataResponse.result {
                 case .success(let value):
                     let location = Location.getLocation(from: value)
